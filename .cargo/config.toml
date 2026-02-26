@@ -1,0 +1,8 @@
+[build]
+target = "x86_64-minios.json"
+
+[target.x86_64-minios]
+rustflags = [
+	"-C", "link-arg=-Tlinker.ld",
+	"-C", "relocation-model=static",
+]
